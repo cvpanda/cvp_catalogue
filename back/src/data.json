@@ -1,0 +1,25 @@
+
+
+{
+  "username": "cvpanda@gmail.com",
+  "password": "0u0asdfjpoa123kll",
+  "company": "CVP",
+  "catalogue": {
+    "title": "Venta Libreria",
+    "items": [
+      {
+        "description": "lapicera blanca diamante",
+        "image": "base64imagen_id1"
+      },
+      {
+        "description": "tijera1",
+        "image": "base64imagen_id2"
+      }
+    ],
+    "activeCatalogue": true
+  },
+  "country": "Argentina",
+  "activeUser": true
+}
+
+
