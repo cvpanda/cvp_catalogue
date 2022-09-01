@@ -10,6 +10,7 @@ const userSchema = mongoose.Schema({
   username: { type: String, required: true },
   password: { type: String, required: true },
   company: { type: String, default: "" },
+  companyLogo: { type: String, default: "logoavatar" },
   catalogue: {
     title: { type: String, default: "New catalogue" },
     items: [
