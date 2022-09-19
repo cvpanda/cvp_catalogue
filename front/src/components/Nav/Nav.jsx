@@ -34,7 +34,6 @@ const Nav = (props) => {
     <div>
       <NavDiv>{mapNavItems(["Home", "User", "Otracosa"])} </NavDiv>
       {props.children}
-      pepe
     </div>
   );
 };

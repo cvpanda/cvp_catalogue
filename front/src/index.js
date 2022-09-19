@@ -4,16 +4,23 @@ import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import "./index.css";
+import { Auth0Provider } from "@auth0/auth0-react";
 import App from "./App";
 
 import store from "./redux/store";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>,
+  <Auth0Provider
+    domain="cvpanda.us.auth0.com"
+    clientId="H23gqw8Yc6zEoxVMHRKYmPWNamKMkyx7"
+    redirectUri={window.location.origin}
+  >
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </Auth0Provider>,
   document.getElementById("root")
 );
 

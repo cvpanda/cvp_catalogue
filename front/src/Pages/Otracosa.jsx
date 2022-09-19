@@ -5,9 +5,5 @@ import Nav from "../components/Nav/Nav";
 export const Otracosa = () => {
   const location = useLocation();
   console.log(location);
-  return (
-    <Nav empresa={"nahuelEnterprise"}>
-      <div>otracosa</div>
-    </Nav>
-  );
+  return <Nav empresa={"nahuelEnterprise"}></Nav>;
 };
